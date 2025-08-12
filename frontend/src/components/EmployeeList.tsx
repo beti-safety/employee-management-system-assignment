@@ -7,16 +7,10 @@ export const EmployeeList = observer(() => {
     employeeStore.fetchEmployees();
   }, []);
 
-  if (employeeStore.isLoading) return <div>Loading employees...</div>;
-
   return (
     <div>
       <h2>Employees ({employeeStore.employees.length})</h2>
-      {employeeStore.error && (
-        <div style={{ color: "red", marginBottom: "10px" }}>
-          Error: {employeeStore.error}
-        </div>
-      )}
+
       <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
         {employeeStore.employees.map((employee) => (
           <div
