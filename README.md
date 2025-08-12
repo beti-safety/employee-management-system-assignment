@@ -54,3 +54,19 @@ After reviewing the POC, stakeholders identified that the current scope is insuf
 - Identify gaps that would prevent real-world usage
 
 **Prioritize showing your thought process - partial implementations with clear direction are preferred**
+
+## CodeSandbox Ready
+
+This project is configured to run in CodeSandbox with:
+
+- Concurrent frontend and backend execution
+- Dynamic port handling for cloud environments
+- Proper dependency management
+
+### Quick Start
+
+```bash
+npm run dev        # Start both frontend and backend
+npm run backend    # Backend only
+npm run frontend   # Frontend only
+```
