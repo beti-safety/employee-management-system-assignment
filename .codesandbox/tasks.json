@@ -1,6 +1,10 @@
 {
   "setupTasks": [
     {
+      "name": "Install Root Dependencies",
+      "command": "npm install"
+    },
+    {
       "name": "Install Backend Dependencies",
       "command": "cd backend && npm install"
     },
