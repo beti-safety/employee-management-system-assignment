@@ -1,0 +1,6 @@
+{
+  "title": "Employee Management - React + Express",
+  "description": "Fullstack TypeScript employee management system with React, MobX, and Express",
+  "tags": ["react", "express", "typescript", "mobx", "fullstack", "interview"],
+  "published": false
+}
