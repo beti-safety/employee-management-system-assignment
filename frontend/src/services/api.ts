@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Employee, CreateEmployeeRequest } from "../types/Employee";
+import { Employee } from "../types/Employee";
 
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3001/api";
 
@@ -9,7 +9,7 @@ export const api = {
     return response.data.data;
   },
 
-  async createEmployee(employeeData: CreateEmployeeRequest): Promise<Employee> {
+  async createEmployee(employeeData): Promise<Employee> {
     const response = await axios.post(`${API_BASE}/employees`, employeeData);
     return response.data.data;
   },
