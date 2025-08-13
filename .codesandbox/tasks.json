@@ -2,30 +2,27 @@
   "setupTasks": [
     {
       "name": "Install Root Dependencies",
-      "command": "npm install"
+      "command": "npm install --legacy-peer-deps"
     },
     {
       "name": "Install Backend Dependencies",
-      "command": "cd backend && npm install"
+      "command": "cd backend && npm install --legacy-peer-deps"
     },
     {
       "name": "Install Frontend Dependencies",
-      "command": "cd frontend && npm install"
+      "command": "cd frontend && npm install --legacy-peer-deps"
     }
   ],
   "tasks": {
     "dev": {
-      "name": "Start Full Application",
-      "command": "npm run dev",
+      "name": "Frontend (Preview)",
+      "command": "cd frontend && HOST=0.0.0.0 PORT=$PORT npm start",
       "runAtStart": true
     },
     "backend": {
-      "name": "Backend Only",
-      "command": "cd backend && npm run dev"
-    },
-    "frontend": {
-      "name": "Frontend Only",
-      "command": "cd frontend && npm start"
+      "name": "Backend API",
+      "command": "cd backend && PORT=3001 npm run dev",
+      "runAtStart": true
     }
   }
 }

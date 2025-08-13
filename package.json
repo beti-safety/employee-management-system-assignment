@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fullstack TypeScript employee management system for technical interview assessment",
   "scripts": {
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "dev": "concurrently \"cd backend && PORT=3001 npm run dev\" \"cd frontend && HOST=0.0.0.0 PORT=\\$PORT npm start\"",
     "install-all": "cd backend && npm install && cd ../frontend && npm install",
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm start"
