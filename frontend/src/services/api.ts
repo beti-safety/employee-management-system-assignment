@@ -1,7 +1,8 @@
 import axios from "axios";
-import { Employee } from "../types/Employee";
+import { Employee, CreateEmployeeRequest } from "../types/Employee";
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3001/api";
+// Prefer relative path so CRA dev server proxy forwards to backend in CodeSandbox/local
+const API_BASE = process.env.REACT_APP_API_URL || "/api";
 
 export const api = {
   async getEmployees(): Promise<Employee[]> {
@@ -9,7 +10,7 @@ export const api = {
     return response.data.data;
   },
 
-  async createEmployee(employeeData): Promise<Employee> {
+  async createEmployee(employeeData: CreateEmployeeRequest): Promise<Employee> {
     const response = await axios.post(`${API_BASE}/employees`, employeeData);
     return response.data.data;
   },

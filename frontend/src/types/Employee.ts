@@ -4,3 +4,8 @@ export interface Employee {
   email: string;
   createdAt: string;
 }
+
+export interface CreateEmployeeRequest {
+  name: string;
+  email: string;
+}

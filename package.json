@@ -9,7 +9,11 @@
     "frontend": "cd frontend && npm start"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "typescript": "4.9.5"
+  },
+  "overrides": {
+    "typescript": "4.9.5"
   },
   "keywords": [
     "react",
