@@ -3,17 +3,13 @@
   "version": "1.0.0",
   "description": "Fullstack TypeScript employee management system for technical interview assessment",
   "scripts": {
-    "dev": "concurrently \"cd backend && PORT=3001 npm run dev\" \"cd frontend && HOST=0.0.0.0 PORT=\\$PORT npm start\"",
+    "dev": "concurrently \"cd backend && PORT=3001 npm run dev\" \"cd frontend && HOST=0.0.0.0 PORT=\\$PORT npm run dev\"",
     "install-all": "cd backend && npm install && cd ../frontend && npm install",
     "backend": "cd backend && npm run dev",
-    "frontend": "cd frontend && npm start"
+    "frontend": "cd frontend && npm run dev"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "typescript": "4.9.5"
-  },
-  "overrides": {
-    "typescript": "4.9.5"
+    "concurrently": "^8.2.2"
   },
   "keywords": [
     "react",

@@ -7,27 +7,21 @@
     "react-dom": "^18.2.0",
     "mobx": "^6.9.0",
     "mobx-react-lite": "^4.0.3",
-    "axios": "^1.4.0",
-    "react-scripts": "5.0.1"
+    "axios": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite": "^5.4.0",
+    "@vitejs/plugin-react": "^4.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port ${PORT:-5173}"
   },
-  "proxy": "http://localhost:3001",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+  "eslintConfig": {},
   "browserslist": {
     "production": [
       ">0.2%",

@@ -16,7 +16,7 @@
   "tasks": {
     "dev": {
       "name": "Frontend (Preview)",
-      "command": "cd frontend && HOST=0.0.0.0 PORT=$PORT npm start",
+      "command": "cd frontend && HOST=0.0.0.0 PORT=$PORT npm run dev",
       "runAtStart": true
     },
     "backend": {

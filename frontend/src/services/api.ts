@@ -1,8 +1,7 @@
 import axios from "axios";
 import { Employee, CreateEmployeeRequest } from "../types/Employee";
 
-// Prefer relative path so CRA dev server proxy forwards to backend in CodeSandbox/local
-const API_BASE = process.env.REACT_APP_API_URL || "/api";
+const API_BASE = (import.meta as any).env?.VITE_API_URL || "/api";
 
 export const api = {
   async getEmployees(): Promise<Employee[]> {
