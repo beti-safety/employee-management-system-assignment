@@ -16,7 +16,7 @@
   "tasks": {
     "dev": {
       "name": "Frontend (Preview)",
-      "command": "cd frontend && npm run dev",
+      "command": "cd frontend && npm start",
       "runAtStart": true
     },
     "backend": {
